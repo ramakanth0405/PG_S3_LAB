@@ -32,4 +32,8 @@ with open('PG_S3_IoT_0_sample_web.html') as html_file:
         print(headline)
         summary=article.p.text
         print(summary)
+    
+    # To print the first anchor tag
+    anchor_tag = soup.a
+    print(anchor_tag) 
 
