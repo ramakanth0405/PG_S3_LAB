@@ -12,3 +12,7 @@ processed_data = {
     "status": "ONLINE",
     "active_alerts": False
 }
+
+# Convert the dictionary into a raw text string for network transmission
+string_to_send = json.dumps(processed_data)
+print(f"Ready to transmit payload stream: {string_to_send}")
