@@ -34,7 +34,8 @@ PG_S3/
 * **`category-encoders`** (`>=2.9.0`): Scikit-learn compatible transformer classes for encoding categorical variables (e.g., One-Hot, Ordinal, Target Encoding).
 * **`pandas`** (`>=3.0.3`): Data manipulation and analysis library used for handling tabular datasets, DataFrames, and CSV processing.
 * **`numpy`** (`>=1.24.1`): Fundamental package for scientific computing and numerical matrix operations.
-* **`scipy`** & **`joblib`**: Mathematical computation tools and parallel processing utilities required by scikit-learn.
+* **`scipy`** (`>=1.10.0`): Scientific computing library used for numerical optimization, statistics, distance calculations, and other mathematical operations.
+* **`joblib`**: Parallel processing and model persistence utility commonly used with scikit-learn.
 
 ### 3. Data Visualization
 * **`matplotlib`** (`>=3.11.0`): Comprehensive plotting library for 2D charts and data visualizations.
