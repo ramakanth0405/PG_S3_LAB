@@ -30,8 +30,9 @@ PG_S3/
 * **`wordcloud`** (`>=1.9.6`): Visual generator for creating word clouds based on word frequencies.
 
 ### 2. Machine Learning & Data Manipulation
-* **`scikit-learn`** (`>=1.9.0`): Core machine learning library used for Random Forest classification/regression (`RandomForestClassifier`), feature scaling, vectorization (`CountVectorizer`), and model evaluation (`accuracy_score`, `classification_report`, `confusion_matrix`).
-* **`category-encoders`** (`>=2.9.0`): Scikit-learn compatible transformer classes for encoding categorical variables (e.g., One-Hot, Ordinal, Target Encoding).
+* **`scikit-learn`** (`<1.6`): Core machine learning library used for Random Forest classification/regression (`RandomForestClassifier`), feature scaling, vectorization (`CountVectorizer`), and model evaluation (`accuracy_score`, `classification_report`, `confusion_matrix`). Downgraded to maintain compatibility with `factor-analyzer`.
+* **`category-encoders`** (`<2.9`): Scikit-learn compatible transformer classes for encoding categorical variables (e.g., One-Hot, Ordinal, Target Encoding). Downgraded to align with the `scikit-learn` dependency constraints.
+* **`factor-analyzer`** (`>=0.5.1`): A library for performing exploratory and confirmatory factor analysis (FA).
 * **`pandas`** (`>=3.0.3`): Data manipulation and analysis library used for handling tabular datasets, DataFrames, and CSV processing.
 * **`numpy`** (`>=1.24.1`): Fundamental package for scientific computing and numerical matrix operations.
 * **`scipy`** (`>=1.10.0`): Scientific computing library used for numerical optimization, statistics, distance calculations, and other mathematical operations.
